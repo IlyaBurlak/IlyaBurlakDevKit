@@ -1,37 +1,30 @@
 {
-  "name": "ilyaburlak_dev-kit",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "author": "Ilya Burlak",
   "bin": {
     "settings": "src/CLI/cli.js",
     "generate-test-data": "src/CLI/cli.js"
   },
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+  "coverageThreshold": {
+    "global": {
+      "branches": 70,
+      "functions": 80,
+      "lines": 80,
+      "statements": 80
+    }
   },
-  "keywords": [
-    "validation",
-    "password",
-    "email",
-    "security"
-  ],
-  "author": "Ilya Burlak",
-  "license": "MIT",
-  "files": [
-    "src/**/*.js",
-    "index.js",
-    "config/validation-settings.json"
-
-  ],
   "dependencies": {
     "inquirer": "^8.2.6"
   },
+  "description": "",
   "devDependencies": {
     "@jest/globals": "^30.0.4",
     "jest": "^30.0.4"
   },
+  "files": [
+    "src/**/*.js",
+    "index.js",
+    "config/validation-settings.json"
+  ],
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
@@ -39,15 +32,24 @@
       "!src/CLI/cli.js",
       "!src/__mocks__/*.js"
     ],
-    "coverageReporters": ["lcov", "text-summary"]
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
   },
-    "coverageThreshold": {
-      "global": {
-        "branches": 70,
-        "functions": 80,
-        "lines": 80,
-        "statements": 80
-      }
-    }
-  }
+  "keywords": [
+    "validation",
+    "password",
+    "email",
+    "security"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ilyaburlak_dev-kit",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "version": "1.0.2"
 }
+
