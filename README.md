@@ -8,7 +8,6 @@
 [![Package Size](https://img.shields.io/bundlephobia/min/ilyaburlak_dev-kit)](https://bundlephobia.com/package/ilyaburlak_dev-kit)
 
 [![Coverage Status](https://coveralls.io/repos/github/IlyaBurlak/IlyaBurlakDevKit/badge.svg?branch=main)](https://coveralls.io/github/IlyaBurlak/IlyaBurlakDevKit?branch=main)
-
 # `ilyaburlak_dev-kit`
 
 Пакет предназначен для упрощения работы с валидацие полей паролей и email
