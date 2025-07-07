@@ -36,8 +36,11 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.js",
-      "!src/CLI/cli.js"
+      "!src/CLI/cli.js",
+      "!src/__mocks__/*.js"
     ],
+    "coverageReporters": ["lcov", "text-summary"]
+  },
     "coverageThreshold": {
       "global": {
         "branches": 70,
